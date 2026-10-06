@@ -1,0 +1,31 @@
+TITLE: OFDM Modulation Over Two Antennas
+
+AIM:
+To design and simulate an OFDM communication system using two transmit antennas and two receive antennas in MATLAB and analyze its BER performance.
+
+SOFTWARE:
+MATLAB
+
+MODULATION:
+QPSK
+
+OFDM:
+64 subcarriers with a 16-sample cyclic prefix.
+
+MIMO:
+2 transmit antennas and 2 receive antennas (2x2 MIMO).
+
+CHANNEL:
+Independent Rayleigh fading links with AWGN.
+
+RECEIVER:
+FFT-based OFDM demodulation followed by Zero-Forcing MIMO equalization and QPSK demodulation.
+
+OUTPUTS:
+1. Two-antenna OFDM waveform
+2. MIMO channel matrix
+3. BER versus SNR curve
+4. QPSK constellation
+
+BASIC PRINCIPLE:
+OFDM divides a high-rate data stream into many lower-rate parallel streams. Each stream is transmitted on an orthogonal subcarrier. The IFFT converts frequency-domain data into a time-domain OFDM signal. A cyclic prefix is added to reduce inter-symbol interference. Two antennas are used at the transmitter and receiver to form a 2x2 MIMO system. At the receiver, the cyclic prefix is removed, FFT is applied, and the MIMO channel is equalized using a Zero-Forcing detector.
